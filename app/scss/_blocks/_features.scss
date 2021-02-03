@@ -1,0 +1,121 @@
+.features {
+  position: relative;
+
+  color: black;
+  background-color: white;
+
+  @include media-breakpoint-down(lg) {
+    padding: 40px 20px 30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 100px 20px 55px;
+  }
+
+  * {
+    position: relative;
+    z-index: 2;
+  }
+
+  &::after {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    right: 0;
+
+    display: block;
+    height: 4px;
+
+    background-color: #F6F8F9;
+
+    @media (min-width: 768px) {
+      content: "";
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+
+    letter-spacing: 0.2px;
+
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 37.5px;
+    }
+  }
+
+  &-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  }
+
+  &-item {
+    width: 150px;
+    margin: 27.5px;
+
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.2px;
+
+    &::before {
+      content: '';
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 97px;
+      height: 97px;
+
+      margin: 0 auto 25px;
+
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0px 0px 11px rgba(244, 17, 50, 0.3);
+      background-repeat: no-repeat;
+      background-position: center;
+
+      @include media-breakpoint-up(lg) {
+        padding: 0 20px;
+      }
+    }
+
+    &--sequre {
+      &::before {
+        background-image: url('../images/src/icon-features-sequre.svg');
+      }
+    }
+
+    &--profile {
+      &::before {
+        background-image: url('../images/src/icon-features-profile.svg');
+      }
+    }
+
+    &--funds {
+      &::before {
+        background-image: url('../images/src/icon-features-funds.svg');
+      }
+    }
+
+    &--checklist {
+      &::before {
+        background-image: url('../images/src/icon-features-checklist.svg');
+      }
+    }
+
+    &--profit {
+      &::before {
+        background-image: url('../images/src/icon-features-profit.svg');
+      }
+    }
+  }
+}

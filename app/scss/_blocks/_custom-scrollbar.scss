@@ -1,0 +1,40 @@
+.custom-scrollbar {
+  -webkit-overflow-scrolling: inherit;
+  transform: translate3d(0, 0, 0);
+
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    height: 9px;
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-button:end:increment,
+  &::-webkit-scrollbar-button:start:decrement {
+    background: 0 0;
+    display: none;
+  }
+
+  &::-webkit-scrollbar-track-piece {
+    background: #21242e;
+  }
+
+  &::-webkit-scrollbar-thumb:horizontal,
+  &::-webkit-scrollbar-thumb:vertical {
+    background: $accent;
+    border-radius: 5px;
+    display: block;
+    height: 180px;
+  }
+
+  &--invisible {
+    &::-webkit-scrollbar-track-piece {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb:horizontal,
+    &::-webkit-scrollbar-thumb:vertical {
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  &--freeze {
+    overflow: hidden;
+  }
+
+  &__sidebar {
+    display: block;
+
+    @media (min-width: 1366px) {
+      min-width: 256px;
+    }
+
+    &-fixed-container {
+      position: fixed;
+      z-index: 2;
+    }
+  }
+
+  &__content {
+    flex-grow: 2;
+  }
+}

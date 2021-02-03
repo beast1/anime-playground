@@ -1,0 +1,42 @@
+.custom-list {
+  max-width: 480px;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  color: white;
+
+  &--dark {
+    color: #5D656B;
+
+    .custom-list__item::before {
+      background-color: $accent;
+    }
+  }
+
+  &__item {
+    margin: 7px 0;
+
+    &::before {
+      content: '';
+
+      position: relative;
+      top: -4px;
+
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      margin-right: 24px;
+
+      background-color: white;
+    }
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

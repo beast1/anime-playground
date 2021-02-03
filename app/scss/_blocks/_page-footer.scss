@@ -1,0 +1,108 @@
+.page-footer {
+  color: white;
+  background: radial-gradient(949.21% 1620.71% at 1046.71% 406.1%, #6C788A 0.05%, #454D58 100%);
+
+  &__main {
+    display: flex;
+    padding: 30px 20px 45px;
+
+    background-image: url("../images/src/bg-patter--footer.svg");
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    @include media-breakpoint-down(lg) {
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      margin-right: auto;
+    }
+  }
+
+  &__right {
+    display: flex;
+
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 15px;
+  }
+
+  &__trademark {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 8px;
+    line-height: 9px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    opacity: 0.4;
+  }
+
+  &__info {
+    //max-width: 215px;
+    margin: 0 15px;
+
+    font-size: 11px;
+    line-height: 15px;
+    color: #B8C5D0;
+
+    &--nav {
+      @include media-breakpoint-up(lg) {
+        margin-right: 70px;
+      }
+    }
+
+    &--group {
+      display: flex;
+
+      @include media-breakpoint-down(sm) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__info-title {
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 11px;
+    color: #FFFFFF;
+  }
+
+  &__info-address {
+    width: 215px;
+
+    @include media-breakpoint-up(md) {
+      margin-right: 30px;
+    }
+  }
+
+  &__nav {
+    font-weight: 600;
+    text-transform: uppercase;
+
+    a {
+      display: block;
+      color: #B8C5D0;
+    }
+  }
+
+  &__email {
+    color: $accent;
+
+    &:hover, &:focus {
+      color: $accent;
+    }
+  }
+}

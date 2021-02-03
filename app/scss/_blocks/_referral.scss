@@ -1,0 +1,187 @@
+.referral {
+  position: relative;
+
+
+  color: #454D58;
+  background-color: #fff;
+
+  @media (min-width: 940px) {
+    min-height: 800px;
+  }
+
+  &__header {
+    padding: 45px 45px 20px;
+
+    @media (min-width: 940px) {
+      position: absolute;
+      top: 110px;
+      left: 75px;
+      z-index: 2;
+
+      padding: 0;
+    }
+
+    @media (max-width: 1440px) {
+      max-width: 610px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 22px;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+
+
+    letter-spacing: -2.9px;
+
+    color: #000000;
+
+    @media (min-width: 940px) {
+      font-size: 84px;
+      line-height: 96px;
+    }
+  }
+
+  &__descr {
+    max-width: 750px;
+    margin: 0;
+
+    font-size: 22px;
+    line-height: 24px;
+
+    letter-spacing: 0.2px;
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 520px;
+
+    @media (min-width: 940px) {
+      height: 800px;
+    }
+  }
+
+  &__slide {
+    position: relative;
+
+    padding: 45px 45px 50px;
+
+    background-color: #fff;
+
+    @media (min-width: 940px) {
+      padding: 395px 75px 100px;
+    }
+  }
+
+  &__slide-bg-trump {
+    background-image: url('../images/src/bg-referral-1.png');
+    //background-position: 630px bottom;
+    background-size: 487px 600px;
+
+    @media (min-width: 1440px) {
+      background-position: right bottom;
+    }
+  }
+
+  &__slide-bg-kiyosaki {
+    background-image: url('../images/src/bg-referral-2.png');
+    //background-position: 630px bottom;
+    background-size: 418px 572px;
+
+    @media (min-width: 1440px) {
+      background-position: right bottom;
+    }
+  }
+
+  &__slide-bg-branson {
+    background-image: url('../images/src/bg-referral-3.png');
+    //background-position: 430px bottom;
+    background-size: 705px 536px;
+
+    @media (min-width: 1440px) {
+      background-position: right bottom;
+    }
+  }
+
+  &__slide-bg-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    display: none;
+
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    //background-size: 487px 600px;
+
+    @media (min-width: 940px) {
+      display: block;
+    }
+  }
+
+  &__quote {
+    max-width: 590px;
+    padding-left: 33px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: $accent;
+
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-image: url('../images/src/icon-quote.svg');
+
+    @media (min-width: 940px) {
+      font-size: 26px;
+      line-height: 34px;
+    }
+  }
+
+  &__author {
+    padding-left: 33px;
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+
+    color: #89969F;
+
+    b {
+      display: block;
+
+      font-weight: 600;
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+      text-transform: capitalize;
+
+      color: black;
+    }
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 37px;
+    left: 45px;
+    z-index: 2;
+
+    display: flex;
+
+    @media (min-width: 940px) {
+      left: 108px;
+    }
+  }
+}

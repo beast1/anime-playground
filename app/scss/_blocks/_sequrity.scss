@@ -1,0 +1,59 @@
+.sequrity {
+  color: white;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../images/src/bg-sequrity.jpg');
+
+  @include media-breakpoint-down(sm) {
+    padding: 40px 60px 35px;
+  }
+
+  @include media-breakpoint-only(md) {
+    padding: 70px 180px 65px 60px;
+  }
+
+  @include media-breakpoint-only(lg) {
+    padding: 128px 130px 120px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: 128px 350px 120px 130px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 42px;
+
+    font-weight: 600;
+
+
+    letter-spacing: -2.9px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 54px;
+      line-height: 54px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 84px;
+      line-height: 84px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 40px;
+
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+  }
+
+  &__small {
+    font-size: 14px;
+    line-height: 22px;
+
+    letter-spacing: 0.2px;
+  }
+}

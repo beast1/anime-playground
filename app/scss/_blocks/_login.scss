@@ -1,0 +1,81 @@
+.login {
+  text-transform: unset;
+
+  label {
+    display: block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #89969F;
+  }
+
+  input {
+    padding: 15px 25px;
+    background: #F6F8F9;
+    border-radius: 7px;
+    box-shadow: none;
+    text-transform: none;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 10px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 35px;
+    letter-spacing: -0.005em;
+    color: $accent;
+  }
+
+  &__greet {
+    display: block;
+    margin-bottom: 20px;
+
+    text-align: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+
+    color: #000000;
+  }
+
+  &__privacy {
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    margin-top: 20px;
+
+    label {
+      font-weight: 400;
+    }
+
+    a {
+      color: $accent;
+    }
+  }
+
+  &__controls {
+    padding-top: 10px;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+  }
+
+  &__forgot {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+
+    letter-spacing: 0.01em;
+
+    color: #89969F;
+  }
+}

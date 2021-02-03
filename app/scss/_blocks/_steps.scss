@@ -1,0 +1,148 @@
+.steps {
+  position: relative;
+  min-height: 738px;
+
+  color: #454D58;
+  background-color: #F6F8F9;
+  //background-image: url(../images/src/bg-steps.jpg);
+  //background-size: cover;
+  //background-repeat: no-repeat;
+
+  &__title {
+    position: absolute;
+    top: 110px;
+    left: 75px;
+    z-index: 2;
+
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+
+    letter-spacing: -0.6px;
+
+    color: #000000;
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 738px;
+  }
+
+  &__slide {
+    padding: 180px 75px 100px;
+
+    overflow: hidden;
+
+    @include media-breakpoint-up(md) {
+      padding: 395px 75px 100px;
+    }
+
+    &::before {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+
+      background-position: right;
+      background-repeat: no-repeat;
+
+      @media (max-width: 1160px) {
+        background-position-x: 320px;
+      }
+    }
+
+    &::after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -3;
+
+      background-color: #E8EDF1;
+    }
+  }
+
+  &__slide-bg-image {
+    &-1 {
+      &::before {
+        @include media-breakpoint-up(sm) {
+          background-image: url(../images/src/bg-steps-1.png);
+        }
+      }
+    }
+
+    &-2 {
+      &::before {
+        @include media-breakpoint-up(sm) {
+          background-image: url(../images/src/bg-steps-2.png);
+        }
+      }
+    }
+
+    &-3 {
+      &::before {
+        @include media-breakpoint-up(sm) {
+          background-image: url(../images/src/bg-steps-3.png);
+        }
+      }
+    }
+
+    &-4 {
+      &::before {
+        @include media-breakpoint-up(sm) {
+          background-image: url(../images/src/bg-steps-4.png);
+        }
+      }
+    }
+  }
+
+  &__slide-bg-phrase {
+    position: absolute;
+    z-index: -2;
+    top: 80px;
+    left: -20px;
+
+    font-weight: bold;
+    font-size: 176px;
+    line-height: 176px;
+    color: #F6F8F9;
+  }
+
+  &__slide-number {
+    font-size: 39px;
+    line-height: 37px;
+    letter-spacing: 0.22px;
+    text-transform: uppercase;
+  }
+
+  &__slide-descr {
+    max-width: 420px;
+
+    font-weight: 600;
+    font-size: 31px;
+    line-height: 37px;
+    letter-spacing: 0.22px;
+  }
+
+  &__controls {
+    position: absolute;
+    bottom: 37px;
+    left: 50%;
+    z-index: 2;
+
+    display: flex;
+    transform: translate(-50%);
+
+    @media (min-width: 768px) {
+      left: 75px;
+      transform: none;
+    }
+  }
+}

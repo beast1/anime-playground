@@ -1,0 +1,36 @@
+.slider-controls {
+  &-item + &-item {
+    margin-left: 44px;
+  }
+
+  &-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    font-size: 0;
+
+    border-radius: 50%;
+
+    color: $accent;
+    box-shadow: inset 0 0 0 1px $accent;
+    transition: .2s ease;
+
+    &--disabled {
+      color: #B8C5D0;
+      box-shadow: inset 0 0 0 1px #B8C5D0;
+    }
+
+    &:hover {
+      color: white;
+      background-color: $accent;
+      box-shadow: inset 0 0 0 1px $accent, 0 0 11px rgba(244,17,50,.3);
+    }
+
+    &:active {
+      transform: scale(.98);
+      box-shadow: none;
+    }
+  }
+}
